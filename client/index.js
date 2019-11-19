@@ -57,15 +57,15 @@ const createKeyboardListener = function(){
         observers: []
     }
 
-    function subscribe(next){
-        state.observers.push(next)
+    function subscribe(observerFunction){
+        state.observers.push(observerFunction)
     }
 
     function notifyAll(command){
         console.log(`Notifying ${state.observers.length} observers`)
 
-        state.observers.forEach((next) => {
-            next(command)
+        state.observers.forEach((observerFunction) => {
+            observerFunction(command)
         })
     }
 
