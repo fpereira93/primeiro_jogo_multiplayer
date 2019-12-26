@@ -2,13 +2,16 @@
   "name": "primeiro_jogo_multiplayer",
   "version": "1.0.0",
   "description": "Primeiro jogo multiplayer",
-  "main": "index.js",
+  "type": "module",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "node": "^13.5.0",
+    "socket.io": "^2.3.0"
   }
 }
